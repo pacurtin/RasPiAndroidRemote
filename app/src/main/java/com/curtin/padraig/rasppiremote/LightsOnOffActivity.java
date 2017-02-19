@@ -9,6 +9,8 @@ import android.view.MenuItem;
 
 public class LightsOnOffActivity extends AppCompatActivity {
 
+    private String serverUrl = "http://109.255.243.13:8080"; //put your server URL here
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,12 +42,10 @@ public class LightsOnOffActivity extends AppCompatActivity {
     }
 
     public void lightsOn(View v){
-        System.out.println("On XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
-        new RestPostUtil().execute("http://192.168.1.11:8080/lightsOn");
+        new RestPostUtil().execute(serverUrl + "/lightsOn");
     }
 
-
     public void lightsOff(View v){
-        System.out.println("Off");
+        new RestPostUtil().execute(serverUrl + "/lightsOff");
     }
 }

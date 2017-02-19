@@ -29,5 +29,4 @@ dependencies {
     compile 'com.android.support:design:25.1.0'
     testCompile 'junit:junit:4.12'
     compile files('libs/android-async-http-1.4.9.jar')
-    compile files('src/main/res/lib/httpclient-4.4.1.1.jar')
 }
