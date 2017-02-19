@@ -2,6 +2,7 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin"
     android:background="#55000000">
 
     <ImageView
@@ -16,13 +17,16 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:text="On"/>
+        android:text="On"
+        android:background="@drawable/appwidget_dark_bg_clickable"
+        />
 
     <Button
         android:id="@+id/offButton"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:text="Off"/>
+        android:text="Off"
+        android:background="@drawable/appwidget_dark_bg_clickable"/>
 
 </LinearLayout>
